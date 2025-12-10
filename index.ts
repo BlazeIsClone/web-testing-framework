@@ -36,10 +36,6 @@ async function main() {
               "The field type: text, email, tel, textarea, select, etc."
             ),
           required: z.boolean().describe("Whether the field is required"),
-          fieldDescription: z
-            .string()
-            .optional()
-            .describe("Additional description of what the field is for"),
         })
       ),
     }),
